@@ -12,23 +12,21 @@ i want to thank everybody at hack club who's making this possible. if you don't 
 
 so a big thank you out to acon, alex ren, cyao, ducc, bunnyguy, phthallo, paolo, kareem, rhys, kl, ian, tongyu, manitej, cinders, and m0hid!!
 
-hello!
-
 # i'm anicetus
 if you're reading this on hack club, you may very well already know me. but if you dont, here's a bit of info:
-1. I live in the usa
-2. i'm ok at coding
-3. but i think im pretty good at electronics and stuff!
-4. i've designed a custom keyboard
-5. and a custom 3d printer
+1. I live in the usa  
+2. i'm ok at coding  
+3. but i think im pretty good at electronics and stuff!  
+4. i've designed a custom keyboard  
+5. and a custom 3d printer  
 
 so yeah i've got a bit to put on my resume! but anyways let's get down to business.
 
-# captain's log
-yes i stinking know high seas ended in january shut up
-
 # bom
 [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSraEE6H8Cx8CHQLCQyQCyDCrQoR9ur6-9fPs5dZ3vY1AYaFjepRuHVCa8LgQ7bhq75_Z4WIajNvxX1/pubhtml)
+
+# captain's log
+yes i stinking know high seas ended in january shut up
 
 ## research
 ### day one - 5/23/25
