@@ -13,7 +13,7 @@ i want to thank everybody at hack club who's making this possible. if you don't 
 so a big thank you out to acon, alex ren, cyao, ducc, bunnyguy, phthallo, paolo, kareem, rhys, kl, ian, tongyu, manitej, cinders, and m0hid!!
 
 # i'm anicetus
-if you're reading this on hack club, you may very well already know me. but if you dont, here's a bit of info:
+if you're reading this on hack club, you may very well already know me. but if you dont, here's a bit of info:  
 1. I live in the usa  
 2. i'm ok at coding  
 3. but i think im pretty good at electronics and stuff!  
@@ -75,3 +75,14 @@ i dont really know how im supposed to do this, but ig i'll figure it out :D
 
 today i started teaching my friend javascript :)
 2.5 hrs
+
+### day five - 5/28/25
+crudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrudcrud
+
+the motors i got in like december or smth are 2450kv cuz i didnt know what it meant and thought well more powerful the better right?
+
+wrong  
+so wrong  
+really really wrong  
+like, kill this project wrong  
+because i didnt stop to think "huh more powerful = more power used" and realize that i need a MASSIVE battery to power these motors. thing is, massive batteries cost massive dollars. and this project doesnt have massive dollars. i'd really hate to waste those motors, but idk what else to do. will do more research on this.
