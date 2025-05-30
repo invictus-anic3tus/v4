@@ -5,7 +5,7 @@ description: "My custom FPV drone plus headset!"
 created_at: "2025-05-27"
 ---
 
-## total time: 7.5 hrs
+## total time: 14 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -86,3 +86,23 @@ so wrong
 really really wrong  
 like, kill this project wrong  
 because i didnt stop to think "huh more powerful = more power used" and realize that i need a MASSIVE battery to power these motors. thing is, massive batteries cost massive dollars. and this project doesnt have massive dollars. i'd really hate to waste those motors, but idk what else to do. will do more research on this.
+
+2.5 hrs
+
+### day six - 5/29/25
+ok i think i figured it out  
+so the motors spec page said max amp draw 35A and i was freaking out cuz that's a LOT. but what i didn't realize (but should have) is that the motors wont be drawing 35A 100% of the time... or even 1% of the time. If I can aim for my drone to be 800g or less, including the battery, then I'll only have to use 40%-50% throttle to get it flying well. The spec sheet also says that 50% throttle using 5045 props (what I have) provides 476g thrust at only 100W of power. Four of those are over 1900g of thrust for only 400W of power! That's way plenty for really any drone.
+
+With that in mind, i looked over different sizes of batteries and eventually landed on 4S's, either 1550mAh ($60 for a four pack on eBay) or 2200mAh ($40 for a two pack on amazon.) The 1550's are looking best rn, since it's more for my money.
+
+All that considered, that's around 3 minutes of flight time per 1550mAh battery/4 min for the 2200mAh's, which isn't very good but not as bad as I thought it would be.
+
+Crisis avoided :D
+
+3 hrs
+
+### day seven - 5/30/25
+today i spent some time helping other people! it was really gratifying and made me feel good :)  
+i didn't do a ton of research tho except for some headset lenses and other smol things. today is the AMA with Strange Parts!!
+
+1 hr
