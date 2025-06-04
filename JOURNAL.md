@@ -5,7 +5,7 @@ description: "My custom FPV drone plus headset!"
 created_at: "2025-05-27"
 ---
 
-## total time: 14 hrs
+## total time: 16 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -106,3 +106,8 @@ today i spent some time helping other people! it was really gratifying and made 
 i didn't do a ton of research tho except for some headset lenses and other smol things. today is the AMA with Strange Parts!!
 
 1 hr
+
+### day eight - 6/2/25
+the past few days ive been hanging out with my friend irl so havent got much done. however today i did a bunch of research on cameras and stuff, and found a $55 headset... cheaper than literally just my VRX. makes me wonder if i would be able to just get that instead, seeing as how it does the exact same stuff, better, and cheaper.
+
+2 hrs
