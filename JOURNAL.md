@@ -5,14 +5,14 @@ description: "My custom FPV drone plus headset!"
 created_at: "2025-05-27"
 ---
 
-## total time: 16 hrs
+## total time: 18.5 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
 
 so a big thank you out to acon, alex ren, cyao, ducc, bunnyguy, phthallo, paolo, kareem, rhys, kl, ian, tongyu, manitej, cinders, and m0hid!!
 
-# i'm anicetus
+## i'm anicetus
 if you're reading this on hack club, you may very well already know me. but if you dont, here's a bit of info:  
 1. I live in the usa  
 2. i'm ok at coding  
@@ -22,7 +22,24 @@ if you're reading this on hack club, you may very well already know me. but if y
 
 so yeah i've got a bit to put on my resume! but anyways let's get down to business.
 
-# bom
+
+# what the project currently looks like
+
+Right now I'm looking at an FPV drone using a standard FC-ESC stack and analog video system. It transmits to Emax Transporter goggles that display it in real-time to my eyeballs! The controller is fully DIY, and instead of being a single controller you hold with both hands, it's sort of like Nintendo joy-cons, with a joystick and two tactile switches on each one:
+1. Left joystick (left thumb):  
+    * Horiz: Yaw (spin in place)  
+    * Vert: camera angle  
+    * Button: arm/disarm  
+2. Right joystick (right thumb):  
+    * Horiz: Roll (strafe left or right)  
+    * Vert: Pitch (forwards or backwards)  
+    * Button: mode switch (manual, auto, idk)  
+3. Button 1 (left index): land  
+4. Button 2 (right index): quick press for headless/headed mode, hold for emergency poweroff  
+5. Button 3 (left middle): programmable macro  
+6. Button 4 (right middle): programmable macro  
+I may also add holding functions for the rest of the buttons, where holding a button makes it do something different than normal. Each controller has an ESP32C3 XIAO and a 1800mAh lipo battery in it. The left controller acts as the master in the ESP-Now communication, getting data from the right controller. It then sends its data as well as the right controller's data to the drone's ESP32, also an ESP32C3 XIAO. I'm using XIAOs because they have external antenna ports, which provide better signals than the onboard antennas of other boards. Additionally, I may use a stronger antenna on the left controller and the drone than what comes with the XIAOs.
+## bom
 [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSraEE6H8Cx8CHQLCQyQCyDCrQoR9ur6-9fPs5dZ3vY1AYaFjepRuHVCa8LgQ7bhq75_Z4WIajNvxX1/pubhtml)
 
 # captain's log
@@ -111,3 +128,16 @@ i didn't do a ton of research tho except for some headset lenses and other smol 
 the past few days ive been hanging out with my friend irl so havent got much done. however today i did a bunch of research on cameras and stuff, and found a $55 headset... cheaper than literally just my VRX. makes me wonder if i would be able to just get that instead, seeing as how it does the exact same stuff, better, and cheaper.
 
 2 hrs
+
+### day nine - 6/5/25
+ok so yesterday and the day before i was focusing mainly on making a corexy guide writeup thingy so i did basically 0 drone work. however today I think I've got the last little bit of research done! I researched how to get the controller commands to the drone, and I think I've settled on ESP-Now.
+
+For those of you who don't know, ESP-Now is a protocol that transfers data quickly between two ESP32 boards. On each handheld controller is an ESP32, and the right controller will send data to the left. The left combines the received data with its own and sends both to the drone. All ESP32s will be ESP32C3 XIAO boards, preferable due to their external antenna ports rather than the PCB antennae. The ESP32 on the drone receives the data and poops it out of its UART channel, which the FC receives grudgingly.
+
+ESP-Now doesn't have a super great range, but I think that if I can optimize it I'll get good results. I don't need hardly any bandwidth, meaning I can get good range instead. Right now I'm looking at a max of close to 0.2 mi (0.3 km) in good weather and in a fairly open area. I've looked at tests, both using onboard and external antennae, and I've gathered that 500 ft (150 m) is when it begins to drop off a bit. That's pretty good in my opinion, especially since I'm not gonna be flying this thing around the city or whatever.
+
+I also did a bit more headset research. So the headset I was looking at is the Emax Transporter (not 2 lol im not that fancy) headset, and from videos ive seen online it's pretty decent--especially for less than $60 😭 Anyways, I asked if it would be fair if I could get it instead of making my own.
+
+Research for this thing has been actually fairly light. I don't think I'm acutally quite done yet, there's always something I forget about.
+
+2.5 hrs
