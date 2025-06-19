@@ -5,7 +5,7 @@ description: "My custom FPV drone plus headset!"
 created_at: "2025-05-27"
 ---
 
-## total time: 18.5 hrs
+## total time: 23 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -138,6 +138,16 @@ ESP-Now doesn't have a super great range, but I think that if I can optimize it 
 
 I also did a bit more headset research. So the headset I was looking at is the Emax Transporter (not 2 lol im not that fancy) headset, and from videos ive seen online it's pretty decent--especially for less than $60 😭 Anyways, I asked if it would be fair if I could get it instead of making my own.
 
-Research for this thing has been actually fairly light. I don't think I'm acutally quite done yet, there's always something I forget about.
+Research for this thing has been actually fairly light. I don't think I'm actually quite done yet, there's always something I forget about.
 
 2.5 hrs
+
+### days ten thru twelve - june 6-12
+i've been doing a bunch on the 3d printer and less on the drone from the 6th to the 12th, but for two days I worked on some CAD! I cadded the flight controller when i realized that there wasn't one, and also a few other small things. i found some 3d models online and that's pretty much it. on the 12th i left for church camp! cya soon :D
+
+3 hrs
+
+### day thirteen - june 18
+back from church camp! I made a model for the switches im using in the DIY controller, and re-analysed the bom for anything I could get rid of. i popped all the components into one design, and started organizing it and seeing what would go where.
+
+1.5 hrs
