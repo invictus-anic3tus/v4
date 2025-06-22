@@ -5,7 +5,7 @@ description: "My custom FPV drone plus headset!"
 created_at: "2025-05-27"
 ---
 
-## total time: 23 hrs
+## total time: 27 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -151,3 +151,19 @@ i've been doing a bunch on the 3d printer and less on the drone from the 6th to 
 back from church camp! I made a model for the switches im using in the DIY controller, and re-analysed the bom for anything I could get rid of. i popped all the components into one design, and started organizing it and seeing what would go where.
 
 1.5 hrs
+
+### day fourteen - june 20
+im multitasking between this and 3d printer so im sorry im doing so little :sob:
+
+anyways i worked on a bunch of cad and started the frame! it's looking quite nice if i do say so myself. I made a lil mount for the GPS at the back. im not super proud of it but i think its ok. does what it's supposed to lol.
+
+![image](https://github.com/user-attachments/assets/8c5634c8-6c9e-4cad-a011-c4a478e75673)
+
+2 hrs
+
+### day fifteen - june 22
+today I just focused on the drone, and did more frame! I got the servo + camera mounts done, so that the camera can go up and down :D
+
+![image](https://github.com/user-attachments/assets/b6791086-e8e6-4012-ab29-bac96c41c1de)
+
+2 hrs
