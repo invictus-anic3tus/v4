@@ -1,7 +1,7 @@
 ---
 title: "v4"
 author: "Anicetus"
-description: "My custom FPV drone plus headset!"
+description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
