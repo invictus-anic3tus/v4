@@ -25,7 +25,7 @@ so yeah i've got a bit to put on my resume! but anyways let's get down to busine
 
 # what the project currently looks like
 
-Right now I'm looking at an FPV drone using a standard FC-ESC stack and analog video system. It transmits to Emax Transporter goggles that display it in real-time to my eyeballs! The controller is fully DIY, and instead of being a single controller you hold with both hands, it's sort of like Nintendo joy-cons, with a joystick and two tactile switches on each one:
+Right now I'm looking at an FPV drone using a standard FC-ESC stack and analog video system. It transmits to Emax Transporter goggles that display it in real-time to my eyeballs! The controller is fully DIY, and instead of being a single controller you hold with both hands, it's sort of like Nintendo joy-cons, with a joystick and two tactile switches on each one:  
 1. Left joystick (left thumb):  
     * Horiz: Yaw (spin in place)  
     * Vert: camera angle  
