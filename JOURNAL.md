@@ -167,3 +167,6 @@ today I just focused on the drone, and did more frame! I got the servo + camera 
 ![image](https://github.com/user-attachments/assets/b6791086-e8e6-4012-ab29-bac96c41c1de)
 
 2 hrs
+
+### day sixteen - june 23
+today I fixed a bunch of stuff with the camera mount, and colorized the camera itself, just to make it look nice. I should've done more today, but I got sidetracked by some stuff. However, it's looking quite nice so far!
