@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 27 hrs
+## total time: 30 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -170,3 +170,16 @@ today I just focused on the drone, and did more frame! I got the servo + camera 
 
 ### day sixteen - june 23
 today I fixed a bunch of stuff with the camera mount, and colorized the camera itself, just to make it look nice. I should've done more today, but I got sidetracked by some stuff. However, it's looking quite nice so far!
+
+### day seventeen - june 24
+today i started the fc-esc stack mount, and i was looking for the included screw sizes. so i opened up my BOM and klicked on my amazon link that i was gonna buy from and... it's out of stock. NOOOOOOO!! It was an amazing price too!!! hopefully it gets back in stock... the ebay link also expired. the aliexpress link is still up, but it's selling for $77, which is a lot more than the amazon one was. I looked around, and the only good ebay links i found were $70 plus shipping. for reference, the original amazon product was $65.99. I looked at the official manufacturer website and was shocked to see it selling for only $60! I put it in the checkout to see what shipping was, and it was free!
+
+You know what wasn't free?
+
+Tariffs.
+
+If you don't know it already about me, I'm politically right and I support President Trump and what he's doing. But $27 tariffs?????? COME ON! It was 45% tariffs. Yep, u heard me right, 45%. That put it at $90. Not ideal.
+
+I'll do more looking around... also cadded the drone legs and made a slot for the esp32 receiver. i edited the gps mount a bit, and positioned it to look nice.
+
+3 hrs
