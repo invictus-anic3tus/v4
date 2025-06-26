@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 30 hrs
+## total time: 33.5 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -171,6 +171,8 @@ today I just focused on the drone, and did more frame! I got the servo + camera 
 ### day sixteen - june 23
 today I fixed a bunch of stuff with the camera mount, and colorized the camera itself, just to make it look nice. I should've done more today, but I got sidetracked by some stuff. However, it's looking quite nice so far!
 
+1.5 hrs
+
 ### day seventeen - june 24
 today i started the fc-esc stack mount, and i was looking for the included screw sizes. so i opened up my BOM and klicked on my amazon link that i was gonna buy from and... it's out of stock. NOOOOOOO!! It was an amazing price too!!! hopefully it gets back in stock... the ebay link also expired. the aliexpress link is still up, but it's selling for $77, which is a lot more than the amazon one was. I looked around, and the only good ebay links i found were $70 plus shipping. for reference, the original amazon product was $65.99. I looked at the official manufacturer website and was shocked to see it selling for only $60! I put it in the checkout to see what shipping was, and it was free!
 
@@ -183,3 +185,31 @@ If you don't know it already about me, I'm politically right and I support Presi
 I'll do more looking around... also cadded the drone legs and made a slot for the esp32 receiver. i edited the gps mount a bit, and positioned it to look nice.
 
 3 hrs
+
+### day eighteen - june 25
+today i worked a lot on CAD! i fixed some messed up geometry (drag components aaaahhhhh) and edited the legs to be more flexible and printable. i widened the holes for the battery velcro straps. here's some pics
+
+![image](https://github.com/user-attachments/assets/ad514c70-6fa3-4592-b46e-76fc9dd95bd6)
+
+![image](https://github.com/user-attachments/assets/fa5b48e2-9578-486e-bf5e-d762441c12b1)
+
+![image](https://github.com/user-attachments/assets/51331c3d-ca5e-4ffc-98ed-4e8f3d055d73)
+
+![image](https://github.com/user-attachments/assets/8f8e0cd9-9fe7-4a58-9a5f-3115df9a73c3)
+
+![image](https://github.com/user-attachments/assets/cd30d99d-88b2-4640-89a2-548e02e487b9)
+
+![image](https://github.com/user-attachments/assets/8d03450b-98f6-4248-a919-223ac37a8fe2)
+
+![image](https://github.com/user-attachments/assets/22216c64-cb39-4bf1-8d96-0c73bc4da20d)
+
+![image](https://github.com/user-attachments/assets/39a979ce-dcd5-4fee-8cf5-7be51cb39ce7)
+
+![image](https://github.com/user-attachments/assets/ce1a2de2-e50a-4db6-87cd-9fafee48cb77)
+
+![image](https://github.com/user-attachments/assets/19f1e75a-41af-426d-8bdf-4009eb3cbc9a)
+
+2 hrs
+
+![image](https://github.com/user-attachments/assets/311b81d3-92fa-4aba-97b7-5efe645390c0)
+
