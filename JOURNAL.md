@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 33.5 hrs
+## total time: 36 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -213,3 +213,9 @@ today i worked a lot on CAD! i fixed some messed up geometry (drag components aa
 
 ![image](https://github.com/user-attachments/assets/311b81d3-92fa-4aba-97b7-5efe645390c0)
 
+### day nineteen - june ??
+so I'm writing this on july 3rd, and for the life of me i cant remember what day i actually did this work. i did a ton of work on whichever day it was, and got the top plate probably 75% done! this drone is actually a lot easier than I thought it'd be. Maybe I just got more skilled at CAD since the 3D printer? Idk.
+
+but what I do know is that the end of CAD is actually drawing near. as of writing this, I just bought everything for the printer pi pro, a side-quest I've been taking these past few days. it's a little mod that I'd like to have before continuing work on my 3D printer. more about it on the [github](https://github.com/invictus-anic3tus/Printer-Pi-Pro)!
+
+2.5 hrs
