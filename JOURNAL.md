@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 38 hrs
+## total time: 42 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -224,5 +224,17 @@ but what I do know is that the end of CAD is actually drawing near. as of writin
 wow! got a bunch more done today. i connected the two plates via hex standoffs so that they're easy to assemble, sturdy, and not complicated. I colored the components to make them more distinguishable and to make the thing look better. This thing is looking about done!
 
 <img width="708" alt="image" src="https://github.com/user-attachments/assets/5a070070-9145-4116-8797-34c00158d2c5" />
+
+2 hrs
+
+### day twenty one - july 5
+yesterday was the 4th of july (AMERICA DAY!), so i didn't do any work. I got a few responses concerning my design, and I was told that the "wings" which hold the motors were likely to bend and make flying difficult. I started to work on it some, thickening them up. I'm just glad I learned this _before_ assembling!
+
+2 hrs
+
+### day twenty two - july 6
+today i pretty much finished the drone body! It's looking really smooth, and the arms are definitely much more sturdy. it looks quite clean, even though it's super bloated (lay off the doritos!) it was a bit complicated getting the geometry to work, but it's way worth it.
+
+Will send pics tmrw.
 
 2 hrs
