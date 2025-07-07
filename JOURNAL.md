@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 42 hrs
+## total time: 45 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -238,3 +238,21 @@ today i pretty much finished the drone body! It's looking really smooth, and the
 Will send pics tmrw.
 
 2 hrs
+### day twenty three - july 7
+wow! it's already july 7th.... crazy. anyways, I think I've actually finally finished the drone body! I've been working a bunch on the controllers as well. right now, they just look like ugly boxes, but i intend to give them nice curvy shapes and whatnot.
+
+Here's some pics!
+
+![image](https://github.com/user-attachments/assets/d5d0785c-1a41-42df-9a42-b67c3cfa92cb)
+
+![image](https://github.com/user-attachments/assets/9df8e3eb-8f35-4f22-a39c-59e7fc87e8e5)
+
+![image](https://github.com/user-attachments/assets/b5275ea1-4d3d-4845-8ff4-410dcf5ef43b)
+
+![image](https://github.com/user-attachments/assets/e7b45083-06a8-42ad-b18a-efd1bd423089)
+
+![image](https://github.com/user-attachments/assets/8a9e86af-5291-43c7-ac44-00c19515d88a)
+
+![image](https://github.com/user-attachments/assets/0171f1f2-f4c1-44cc-b2ef-3b71c64663fb)
+
+3 hrs
