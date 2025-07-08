@@ -28,16 +28,17 @@ so yeah i've got a bit to put on my resume! but anyways let's get down to busine
 Right now I'm looking at an FPV drone using a standard FC-ESC stack and analog video system. It transmits to Emax Transporter goggles that display it in real-time to my eyeballs! The controller is fully DIY, and instead of being a single controller you hold with both hands, it's sort of like Nintendo joy-cons, with a joystick and two tactile switches on each one:  
 1. Left joystick (left thumb):  
     * Horiz: Yaw (spin in place)  
-    * Vert: camera angle  
+    * Vert: Up/down
     * Button: arm/disarm  
 2. Right joystick (right thumb):  
     * Horiz: Roll (strafe left or right)  
     * Vert: Pitch (forwards or backwards)  
     * Button: mode switch (manual, auto, idk)  
-3. Button 1 (left index): land  
-4. Button 2 (right index): quick press for headless/headed mode, hold for emergency poweroff  
-5. Button 3 (left middle): programmable macro  
-6. Button 4 (right middle): programmable macro  
+3. Potentiometer (left thumb): throttle/camera angle
+4. Button 1 (left index): land  
+5. Button 2 (right index): press to swap throttle and camera angle control, hold for emergency poweroff  
+6. Button 3 (left middle): beep buzzer  
+7. Button 4 (right middle): programmable macro  
 I may also add holding functions for the rest of the buttons, where holding a button makes it do something different than normal. Each controller has an ESP32C3 XIAO and a 1800mAh lipo battery in it. The left controller acts as the master in the ESP-Now communication, getting data from the right controller. It then sends its data as well as the right controller's data to the drone's ESP32, also an ESP32C3 XIAO. I'm using XIAOs because they have external antenna ports, which provide better signals than the onboard antennas of other boards. Additionally, I may use a stronger antenna on the left controller and the drone than what comes with the XIAOs.
 ## bom
 [here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSraEE6H8Cx8CHQLCQyQCyDCrQoR9ur6-9fPs5dZ3vY1AYaFjepRuHVCa8LgQ7bhq75_Z4WIajNvxX1/pubhtml)
