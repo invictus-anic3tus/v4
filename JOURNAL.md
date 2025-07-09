@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 45 hrs
+## total time: 50+1/3 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -257,3 +257,31 @@ Here's some pics!
 ![image](https://github.com/user-attachments/assets/0171f1f2-f4c1-44cc-b2ef-3b71c64663fb)
 
 3 hrs
+
+### day twenty four - july 8
+today was quite productive! I did a ton of work on the controllers and got them half-finished. They're super complex and assembly will be really fun (both sarcastic and not lol).
+
+![image](https://github.com/user-attachments/assets/5b3d88b1-ea6b-4586-85e4-091dc83568cd)
+
+![image](https://github.com/user-attachments/assets/840fd6ed-71af-4338-afd0-7919140ab032)
+
+![image](https://github.com/user-attachments/assets/ca0528ff-2e2b-4f51-83d0-c0c3b8f209e6)
+
+![image](https://github.com/user-attachments/assets/50a62f9a-2b12-4e75-8e5e-5b2cc921d7e1)
+
+3 hrs
+
+### day twenty five - july 9
+dang I was fire today
+
+finished the controllers! They each have a joystick w/ button for the up/down, forwards/backwards, pitch/yaw, and strafe, as well as two extra buttons on each for more features. The left joystick has a potentiometer for throttle control and camera pitch when a button is pressed. They're kinda ugly and boxy, but for what I had to work with, I'm quite proud of them.
+
+![image](https://github.com/user-attachments/assets/33f252d8-33b9-48f3-9a11-9279bfad95ed)
+
+![image](https://github.com/user-attachments/assets/931e280e-aa5a-405f-9829-757e1fa48eeb)
+
+![image](https://github.com/user-attachments/assets/2a8bdec6-8ddb-4e72-af88-63a8516662e2)
+
+![image](https://github.com/user-attachments/assets/9d8d1669-9881-4887-b638-8b93104291eb)
+
+2.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 hrs
