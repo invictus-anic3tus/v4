@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 50+1/3 hrs
+## total time: 52.5+1/3 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -285,3 +285,8 @@ finished the controllers! They each have a joystick w/ button for the up/down, f
 ![image](https://github.com/user-attachments/assets/9d8d1669-9881-4887-b638-8b93104291eb)
 
 2.3333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333 hrs
+
+### day twenty six - july 10
+today i made some minor changes and did a big ol github overhaul. I researched a bunch on using ESP-Now for the receiver and stuff, and found out it's a bit easier than i thought. i also made a lil hole for the esp32's antenna to route through on the drone. unfortunatley, I realized my drone batteries dont fit, so i need to rework those. also need to add switches for on/off
+
+2.5 hrs
