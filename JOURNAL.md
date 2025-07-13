@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 52.5+1/3 hrs
+## total time: 57+1/3 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -288,5 +288,23 @@ finished the controllers! They each have a joystick w/ button for the up/down, f
 
 ### day twenty six - july 10
 today i made some minor changes and did a big ol github overhaul. I researched a bunch on using ESP-Now for the receiver and stuff, and found out it's a bit easier than i thought. i also made a lil hole for the esp32's antenna to route through on the drone. unfortunatley, I realized my drone batteries dont fit, so i need to rework those. also need to add switches for on/off
+
+2.5 hrs
+
+### day twenty seven - july 11
+today I did more work on the drone controllers, trying to get the batteries to fit. not a whole lot of time tho because my MOM'S BRITHDAY!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+2 hrs
+
+### day twenty eight - july 13
+today i finished the controllers 100% finally! Assembly is definitely going to be a challenge because of how intricate they are, but I'm prepared to make revisions to them if needs be. I also incorporated power switches finally! the most difficult part of assembly is hands down going to be the power wiring. the battery has to go positive to the switch, then to the esp32, and negative straight to the esp32, but all the while, the esp32 will have to be wired to the switches, pot, and joystick. I'm frankly not sure I've allotted enough space for wires to go... I'll see.
+
+<img width="434" height="530" alt="image" src="https://github.com/user-attachments/assets/2ddd64c0-a5bc-4356-9c4d-009299c0d1b7" />
+
+<img width="289" height="412" alt="image" src="https://github.com/user-attachments/assets/4d378d84-fa77-4f19-bde7-726dd55b0c8a" />
+
+<img width="366" height="516" alt="image" src="https://github.com/user-attachments/assets/56430824-9964-4345-9273-bd3aec110b5a" />
+
+<img width="476" height="574" alt="image" src="https://github.com/user-attachments/assets/835d215c-8fa2-4777-ad80-f047b8538eb0" />
 
 2.5 hrs
