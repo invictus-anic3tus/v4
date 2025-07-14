@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 57+1/3 hrs
+## total time: 57.5+1/3 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -307,4 +307,6 @@ today i finished the controllers 100% finally! Assembly is definitely going to b
 
 <img width="476" height="574" alt="image" src="https://github.com/user-attachments/assets/835d215c-8fa2-4777-ad80-f047b8538eb0" />
 
-2.5 hrs
+Oh poo. I went over my BOM to try to optimize it, you know, review parts that were overkill or unnecessary. I did take out the Caddx Ratel Pro camera in favor of the Ratel 2, which is cheaper and which many claim to be better. That brought the cost down $5, which I was pleased about! I went through, changing stuff and finding cheaper versions on AliExpress, until I got to the VTX. I never inputted the price on it. It's $25. That means that my entire BOM was $25 more than I thought! That brought it to a staggering $373, even after optimizing the other parts. I didn't know what to do, so I just kept optimizing, hoping to be able to find cheaper parts. I was concerned that I might have to get rid of buying carbon fiber filament, which I'd planned on in order to keep the body from flexing. I cut $5 from overpriced joysticks on Amazon, $5 from my battery charger, in favor of a cheaper model, and a cheaper seller of my FC-ESC stack. In the end, I brought it down to $349.93! Ouch.
+
+3 hrs
