@@ -108,12 +108,20 @@ Assembling the drone body is very easy. First, take the large baseplate piece, a
 
 Place the battery at the back of the drone, and route a velcro strap through the base to secure it in place. Take the TPU GPS mount and screw it onto the tail of the drone with two M3 screws. Press the GPS into it. Place the ESP32 into its slot, and screw in its panel. Attach the antenna which came with the ESP32 and secure it to the bottom of the drone, using extra tape if needed.
 
-Add a heatset insert to the large hole of the servo top piece. Screw it in place to the main body piece. Now add heatset inserts to the top piece. It needs four to secure the FC-ESC stack, as well as eight along the sides to connect to the arms. Screw in the M3 standoffs as shown in the CAD design, and place the top piece on top of them. Screw it to the standoffs and the plastic piece on the front as well as from the arms and to the servo top piece.
+Add a heatset insert to the large hole of the servo top piece. Screw it in place to the main body piece. This is when you'll wire everything. Make sure to route the wires through the top piece for the buzzer before soldering them, since the pins of the buzzer stick through the top piece.
+
+
+
+Now add heatset inserts to the top piece. It needs four to secure the FC-ESC stack, as well as eight along the sides to connect to the arms. Screw in the M3 standoffs as shown in the CAD design, and place the top piece on top of them. Screw it to the standoffs and the plastic piece on the front as well as from the arms and to the servo top piece.
 
 All done!
 
 ### Controllers
 Instructions coming soon, for now see the CAD design
+
+Wiring diagram: (For left controller; the right one simply omits the standalone potentiometer)
+
+![Controller Wiring](https://github.com/user-attachments/assets/d50aeb38-5a00-43ba-86bf-0838346216b4)
 
 ## Firmware
 See the [Speedybee F405 Mini manual](https://store-fhxxhuiq8q.mybigcommerce.com/product_images/img_SpeedyBee_F405_Mini_BLS_35A/SpeedyBee-f405-mini-stack-Manual-en.pdf) for firmware and FC-ESC setup.
