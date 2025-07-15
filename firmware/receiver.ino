@@ -5,12 +5,13 @@
 HardwareSerial SerialSbus(1); // UART1
 #define SBUS_TX_PIN 21
 
-int channelNum = 11
+const int channelNum = 11
 
 // non-inverted sbus: if it doesn't register when connected to SBUS (R2), try connected to R3, and vice versa.
 SBUS sbus(&SerialSbus, -1, SBUS_TX_PIN, false);
 
 typedef struct struct_message {
+  uint8_t source_id;      // source A (1) is left controller, B (2) is right controller
   int16_t ch[channelNum]; // 11 channels, -1000 to 1000 from 2 joysticks with buttons, four buttons, and a potentiometer
 } struct_message;
 
