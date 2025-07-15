@@ -4,4 +4,8 @@ After completely powering off the drone, plug in the USB port on the back of the
 
 If unplugging and plugging the USB doesn't make a difference, try using multiple different cables to see if the cable is the issue.
 
-Now paste the receiver code text from above into the code window in Arduino IDE and hit the forward arrow button in the top left. Once the code is completely uploaded, you can unplug the USB.
+Now you need the SBUS library for the receiver. Open a terminal window and navigate to `C:\Users\{username}\Documents\Arduino` on Windows, `/Users/{username}/Documents/Arduino` on Mac, or `/home/{username}/Arduino/libraries` on Linux. Now run `git clone https://github.com/bolderflight/sbus.git`.
+
+Finally, paste the receiver code text from above into the code window in Arduino IDE and hit the forward arrow button in the top left. Once the code is completely uploaded, you can unplug the USB.
+
+Now you can plug in the controllers and paste the code in for each one, uploading like before.
