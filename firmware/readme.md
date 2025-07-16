@@ -8,4 +8,4 @@ Now you need the SBUS library for the receiver. Open a terminal window and navig
 
 Finally, paste the receiver code text from above into the code window in Arduino IDE and hit the forward arrow button in the top left. Once the code is completely uploaded, you can unplug the USB.
 
-Now you can plug in the controllers and paste the code in for each one, uploading like before.
+Now you can plug in the controllers and paste the code in for each one, uploading like before. For the left controller and right controller code files, you'll need to change the MAC address at the top of the code as specified. You can find it by copying the get-mac-address file and uploading it to the ESP32's, then unplugging and re-plugging them back in. See the output in Arduino IDE for the MAC address.
