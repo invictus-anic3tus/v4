@@ -128,6 +128,8 @@ Wiring diagram: (For left controller; the right one simply omits the standalone 
 ## Firmware
 See the [Speedybee F405 Mini manual](https://store-fhxxhuiq8q.mybigcommerce.com/product_images/img_SpeedyBee_F405_Mini_BLS_35A/SpeedyBee-f405-mini-stack-Manual-en.pdf) for firmware and FC-ESC setup.
 
+In Betaflight (or on the SpeedyBee app) make sure that you set the servo limits accordingly. You should watch [this](https://www.youtube.com/watch?v=L-6r2iX1p6s) video to learn how to properly setup the servo. As I haven't done this yet myself, I don't fully know how to do this. The servo has a maximum angle of 30° past midpoint and minimum angle of -80° from midpoint.
+
 # Bill of Materials
 
 |Part                      |Quantity|Unit Price|Total Price|Amazon Link                                                                             |AliExpress Link                                     |eBay Link (can change)               |Manufacturer                                                                            |Weight on Drone (g)|Alt. Product                                 |Notes                                                                                                    |Cheapest                                                  |

@@ -87,7 +87,7 @@ void loop() {
   sentData.ch[5] = 0;         // channel 6  (AUX 2) is right thumb button (not in this code)
   sentData.ch[6] = indexVal;  // channel 7  (AUX 3) is left index button
   sentData.ch[7] = 0;         // channel 8  (AUX 4) is right index button (not in this code)
-  sentData.ch[8] = middleVal; // channel 9  (AUX 5) is left middle button
+  sentData.ch[8] = middleVal; // channel 9  (AUX 5) is left middle button : buzzer
   sentData.ch[9] = 0;         // channel 10 (AUX 6) is right middle button (not in this code)
   sentData.ch[10] = potVal;   // channel 11 (AUX 7) is the left potentiometer (camera angle)
 
