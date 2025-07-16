@@ -36,7 +36,7 @@ typedef struct struct_message {
 
 struct_message receivedData;
 
-bool validateData(const struct_message& data)) {
+bool validateData(const struct_message& data) {
   if (data.source_id != 1 && data.source_id != 2) {
     Serial.println("Invalid Source ID");
     return false;
@@ -128,6 +128,7 @@ void onDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
       // this makes sure that 0 is always throttleToHover
       // for example, if throttleToHover is 300, then we're mapping -1000->1000 to 172->428 (two times throttle minus 172)
       // so that the midpoint (receivedData gives a 0, which is when the joystick is at rest) is at exactly throttleToHover
+      // this intentionally limits the throttle, as 100% throttle would cause the drone to go incredibly fast, at least for my motors.
       sbusChannels[i] = map(receivedData.ch[i], -1000, 1000, 172, (throttleToHover*2) - 172);
     }
     else {
@@ -144,8 +145,10 @@ void onDataRecv(const uint8_t * mac, const uint8_t *incomingData, int len) {
 void setup() {
   Serial.begin(115200);
 
-  // wifi and ESP-Now init
+  // wifi and ESP-Now long rage init
   WiFi.mode(WIFI_STA);
+  esp_wifi_set_protocol(WIFI_IF_STA, WIFI_PROTOCOL_LR);
+
   if (esp_now_init() != ESP_OK) {
     Serial.println("Error initializing ESP-NOW");
     return;

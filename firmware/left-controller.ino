@@ -3,6 +3,8 @@
 
 // replace with the right controller's MAC address!
 uint8_t rightAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+unsigned long lastSent = 0;
+const unsigned long sendInterval = 20; // milliseconds
 
 const int channelNum = 11; // 11 channels total
 
@@ -45,6 +47,7 @@ void setup() {
 
   // set device as a wifi station
   WiFi.mode(WIFI_STA);
+  esp_wifi_set_protocol(WIFI_IF_STA, WIFI_PROTOCOL_LR);
 
   // Init ESP-Now
   if (esp_now_init() != ESP_OK) {
@@ -69,38 +72,47 @@ void setup() {
 }
  
 void loop() {
-  // read inputs
-  // analog vals are from 0 to 4095, but we need to get them to from -1000 to 1000
-  xval = map(analogRead(stickXPin), 0, 4095, -1000, 1000);
-  yval = map(analogRead(stickYPin), 0, 4095, -1000, 1000);
-  stickVal = digitalRead(stickButton);
-  potVal = map(analogRead(potPin), 0, 4095, -1000, 1000);
-  indexVal = digitalRead(indexPin);
-  middleVal = digitalRead(middlePin);
-  
-  // set values to send
-  sentData.ch[0] = 0;         // channel 1  is Y on the right   : Roll (not in this code)
-  sentData.ch[1] = 0;         // channel 2  is X on the right   : Pitch (not in this code)
-  sentData.ch[2] = yval;      // channel 3  is Y on the left    : Yaw
-  sentData.ch[3] = xval;      // channel 4  is X on the left    : Throttle
-  sentData.ch[4] = stickVal;  // channel 5  (AUX 1) is left thumb button
-  sentData.ch[5] = 0;         // channel 6  (AUX 2) is right thumb button (not in this code)
-  sentData.ch[6] = indexVal;  // channel 7  (AUX 3) is left index button
-  sentData.ch[7] = 0;         // channel 8  (AUX 4) is right index button (not in this code)
-  sentData.ch[8] = middleVal; // channel 9  (AUX 5) is left middle button : buzzer
-  sentData.ch[9] = 0;         // channel 10 (AUX 6) is right middle button (not in this code)
-  sentData.ch[10] = potVal;   // channel 11 (AUX 7) is the left potentiometer (camera angle)
 
-  // all the values not in this code snippet will be added by the "relay" esp32, on the right controller. the left controller reads its own values and transmits them to the right controller, which adds its values to the mix and sends them to the drone.
+  unsigned long now = millis(); // set now to right now
 
-  // send message via ESP-Now      address        data                  data length
-  esp_err_t result = esp_now_send(rightAddress, (uint8_t *) &sentData, sizeof(sentData));
-   
-  if (result == ESP_OK) {
-    Serial.println("Sent with success"); // yippee!!11!
+  // if it's been 20ms
+  if (now - lastSent >= sendInterval) {
+
+    // read inputs
+    // analog vals are from 0 to 4095, but we need to get them to from -1000 to 1000
+    xval = map(analogRead(stickXPin), 0, 4095, -1000, 1000);
+    yval = map(analogRead(stickYPin), 0, 4095, -1000, 1000);
+    stickVal = digitalRead(stickButton);
+    potVal = map(analogRead(potPin), 0, 4095, -1000, 1000);
+    indexVal = digitalRead(indexPin);
+    middleVal = digitalRead(middlePin);
+    
+    // set values to send
+    sentData.ch[0] = 0;         // channel 1  is Y on the right   : Roll (not in this code)
+    sentData.ch[1] = 0;         // channel 2  is X on the right   : Pitch (not in this code)
+    sentData.ch[2] = yval;      // channel 3  is Y on the left    : Yaw
+    sentData.ch[3] = xval;      // channel 4  is X on the left    : Throttle
+    sentData.ch[4] = stickVal;  // channel 5  (AUX 1) is left thumb button
+    sentData.ch[5] = 0;         // channel 6  (AUX 2) is right thumb button (not in this code)
+    sentData.ch[6] = indexVal;  // channel 7  (AUX 3) is left index button
+    sentData.ch[7] = 0;         // channel 8  (AUX 4) is right index button (not in this code)
+    sentData.ch[8] = middleVal; // channel 9  (AUX 5) is left middle button : buzzer
+    sentData.ch[9] = 0;         // channel 10 (AUX 6) is right middle button (not in this code)
+    sentData.ch[10] = potVal;   // channel 11 (AUX 7) is the left potentiometer (camera angle)
+
+    // all the values not in this code snippet will be added by the "relay" esp32, on the right controller. the left controller reads its own values and transmits them to the right controller, which adds its values to the mix and sends them to the drone.
+
+    // send message via ESP-Now      address        data                  data length
+    esp_err_t result = esp_now_send(rightAddress, (uint8_t *) &sentData, sizeof(sentData));
+    
+    if (result == ESP_OK) {
+      Serial.println("Sent with success"); // yippee!!11!
+    }
+    else {
+      Serial.println("Error sending the data"); // oh noes :(
+    }
+
+    lastSent = now; // it was just sent
+
   }
-  else {
-    Serial.println("Error sending the data"); // oh noes :(
-  }
-  delay(20); // wait 20ms
 }

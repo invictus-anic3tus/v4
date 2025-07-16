@@ -3,6 +3,8 @@
 
 // replace with the drone receiver's MAC address!
 uint8_t receiverAddress[] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
+unsigned long lastSendTime = 0;
+const unsigned long sendInterval = 20;
 
 const int channelNum = 11; // 11 channels total
 
@@ -62,6 +64,13 @@ void onReceive(const uint8_t *mac, const uint8_t *incomingDataBytes, int len) {
   else {
     Serial.println("Error sending the data"); // oh noes :(
   }
+
+  unsigned long now = millis();
+  if (now - lastSendTime >= sendInterval) {
+    esp_now_send(receiverMAC, (uint8_t *)&combinedData, sizeof(combinedData));
+    lastSendTime = now;
+  }
+
 }
 
 
@@ -77,6 +86,7 @@ void setup() {
 
   // set device as a wifi station
   WiFi.mode(WIFI_STA);
+  esp_wifi_set_protocol(WIFI_IF_STA, WIFI_PROTOCOL_LR);
 
   // Init ESP-Now
   if (esp_now_init() != ESP_OK) {
@@ -104,5 +114,5 @@ void setup() {
 }
  
 void loop() {
-  delay(20); // idle and wait
+  // idle but don't wait, because otherwise there'll be added latency between the left and right controllers
 }
