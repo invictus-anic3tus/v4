@@ -127,6 +127,8 @@ All done!
 
 ### Controller Assembly
 
+![Joysticks](images/Both_Joysticks.png)
+
 Instructions coming soon, for now see the CAD design
 
 Wiring diagram: (For left controller; the right one simply omits the standalone potentiometer)
