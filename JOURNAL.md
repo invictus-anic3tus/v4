@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 57.5+1/3 hrs
+## total time: 64+1/3 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -36,7 +36,7 @@ Right now I'm looking at an FPV drone using a standard FC-ESC stack and analog v
     * Button: mode switch (manual, auto, idk)  
 3. Potentiometer (left thumb): throttle/camera angle
 4. Button 1 (left index): land  
-5. Button 2 (right index): press to swap throttle and camera angle control, hold for emergency poweroff  
+5. Button 2 (right index): emergency poweroff  
 6. Button 3 (left middle): beep buzzer  
 7. Button 4 (right middle): programmable macro  
 I may also add holding functions for the rest of the buttons, where holding a button makes it do something different than normal. Each controller has an ESP32C3 XIAO and a 1800mAh lipo battery in it. The left controller acts as the master in the ESP-Now communication, getting data from the right controller. It then sends its data as well as the right controller's data to the drone's ESP32, also an ESP32C3 XIAO. I'm using XIAOs because they have external antenna ports, which provide better signals than the onboard antennas of other boards. Additionally, I may use a stronger antenna on the left controller and the drone than what comes with the XIAOs.
@@ -310,3 +310,26 @@ today i finished the controllers 100% finally! Assembly is definitely going to b
 Oh poo. I went over my BOM to try to optimize it, you know, review parts that were overkill or unnecessary. I did take out the Caddx Ratel Pro camera in favor of the Ratel 2, which is cheaper and which many claim to be better. That brought the cost down $5, which I was pleased about! I went through, changing stuff and finding cheaper versions on AliExpress, until I got to the VTX. I never inputted the price on it. It's $25. That means that my entire BOM was $25 more than I thought! That brought it to a staggering $373, even after optimizing the other parts. I didn't know what to do, so I just kept optimizing, hoping to be able to find cheaper parts. I was concerned that I might have to get rid of buying carbon fiber filament, which I'd planned on in order to keep the body from flexing. I cut $5 from overpriced joysticks on Amazon, $5 from my battery charger, in favor of a cheaper model, and a cheaper seller of my FC-ESC stack. In the end, I brought it down to $349.93! Ouch.
 
 3 hrs
+
+### day twenty nine - july 15
+today i basically cleaned up the BOM some more and started working on the controllers/receiver firmware. I've kinda found an issue though... most drone controllers' throttle control doesn't snap to center, but the joystick modules I'm getting do, and the spring can't be removed without affecting the other direction, which for the the throttle joystick would be yaw. removing the spring would cause the drone to never stop rotating in place! I tried to do a bunch of research on this, but it's hard to figure out what to do. The firmware is a bit more complicated than I'd expected, but I got a bunch done after getting the general idea of it.
+
+3 hrs
+
+### day thirty - july 16
+figured out the throttle! I decided to leave it with the spring in... here's how I explained it to ChatGPT when I was brainstorming:
+
+
+So the "throttle" control is just the percentage of motor power, not distinctly up/down or speed. I had thought that throttle meant motor power while moving, aka speed, and that there was a separate control for up/down that controlled motor power while stationary. However, the former is really just how far I push the forwards/backwards/left/right joystick, while the latter is more of what throttle is.
+
+So the drone is always in either one of two states while flying: no X/Y plane movement or moving in the X or Y direction. If I control throttle in the first state, it simply causes the drone to move upwards the entire time the throttle percentage is above hover, and downwards if the throttle percentage is below hover. If I change throttle in the second state, while the drone is tilted in a direction, it will move faster in that direction but also start to move upwards.
+
+If I leave the spring in, then in the software I can configure the midpoint to be exactly at the hover percentage (likely much lower than 50% in my scenario, somewhere around 25%). This means that in the first state, with no throttle control, the drone will always be at hover. I can specifically control it and pull down to make the drone go down, up to go up, and when releasing, it will hover at that position. In the second state, with no throttle control, the drone will be moving along the X/Y axes at a speed relative to how far I'm pushing the X/Y movement joysticks. When I increase throttle in the second state, the drone will begin to move in the X/Y plane a bit faster, while going upwards as well. The opposite for decreasing throttle. When taking off with the spring, The drone starts up and immediately goes to the hover percentage, meaning it only lifts a small bit above the ground, if at all. If I want the drone not to shake or lift immediately, I can hold the throttle joystick down when arming.
+
+If I somehow take out the spring for throttle but not yaw, in the first state the drone will only be at hover if I specifically set it there, and otherwise will drift up or down. In the second state, the drone will either steadily climb a bit or lower a bit when throttle is the least bit off center, and when deliberately controlling, will stay at that level and continue to rise/fall at that rate until I manually bring it back to center. Taking off would be easier, however, as the motors would be idle until I manually lift the joystick to have the drone rise.
+
+
+I did a bunch more work on firmware! I am very pleased :3
+
+3.5 hrs
+
