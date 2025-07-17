@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 64+1/3 hrs
+## total time: 67 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -333,3 +333,9 @@ I did a bunch more work on firmware! I am very pleased :3
 
 3.5 hrs
 
+### day thirty one - july 17
+today i finalized the repo, i think. i exported all the 3d print and cad files, updated all the readmes for clarity and whatnot, and replaced the CDN-hosted images with locally hosted images. this part was fairly straightforward, but a bit tedious getting all those files.
+
+i'm actually so excited to build and tune this thing... perhaps except for the controllers. those will be difficult. anyways i think code is done and stuff. i also updated the little pot wheel on the left controller to say "camera" instead of throttle. another interesting thing is that amazon is actually sometimes much cheaper than aliexpress, at least for certain parts. It'll be kinda nice getting them overnight and stuff as well.
+
+2.6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666667 hrs
