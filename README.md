@@ -1,5 +1,3 @@
-<!-- markdownlint-disable MD033 MD025 MD041 -->
-
 <div align="center">
   <h1>v4</h1>
   <p>by anicetus</p>
@@ -84,6 +82,22 @@ When Highway came along. [Highway](https://highway.hackclub.com/) is a [Hack Clu
 # Controllers
 
 The v4 is designed to be controlled by an ESP-NOW-based controller. The drone has a slot for an ESP32C3 XIAO to fit, which can communicate to the ground controller which also has an ESP32. This ESP32 controller can be any shape and size you wish, but there are 3D-printable dual handheld controllers already made. You can see the code for the controllers and drone in the firmware folder above.
+
+1. Left joystick (left thumb):  
+    * Horiz: Yaw (spin in place)  
+    * Vert: Throttle  
+    * Button: arm/disarm  
+2. Right joystick (right thumb):  
+    * Horiz: Roll (strafe left or right)  
+    * Vert: Pitch (forwards or backwards)  
+    * Button: land  
+3. Potentiometer (left thumb): camera angle  
+4. Button 1 (left index): programmable  
+5. Button 2 (right index): emergency poweroff  
+6. Button 3 (left middle): beep buzzer  
+7. Button 4 (right middle): programmable
+
+Note that all of the buttons, both standalone and on the joysticks, can be programmed to do whatever you'd like through Betaflight. These are simply the controls that I thing are the most sensible.
 
 # Setup
 
