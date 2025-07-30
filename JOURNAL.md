@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 67 hrs
+## total time: 69.5 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -341,3 +341,21 @@ today i finalized the repo, i think. i exported all the 3d print and cad files, 
 i'm actually so excited to build and tune this thing... perhaps except for the controllers. those will be difficult. anyways i think code is done and stuff. i also updated the little pot wheel on the left controller to say "camera" instead of throttle. another interesting thing is that amazon is actually sometimes much cheaper than aliexpress, at least for certain parts. It'll be kinda nice getting them overnight and stuff as well.
 
 2.6666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666666667 hrs
+
+### day thirty two - july 29
+phew! It's been a while! today all the amazon parts finally arrived, after getting the grant and buying everything. I didn't have the time to do any actual work today, so I'll just say 0 hrs. But first, some pics!
+
+<img width="720" height="540" alt="image" src="https://github.com/user-attachments/assets/8148380a-da78-4282-a0f3-7f62d9d78f71" />
+
+<img width="540" height="720" alt="image" src="https://github.com/user-attachments/assets/233e9cfa-bc4d-4954-aa2e-9de970160f6a" />
+
+Also the GPS and VTX arrived, but I took a video instead of a picture and github doesn't like videos. :b
+
+0 hrs :)
+
+### day thirty three - july 30
+today I worked more on the CAD after getting a better idea of what screws I have. I made some adjustments so as not to have to buy any different lengths, and I tested out the PETG CF filament. It's working pretty well! I think tomorrow I'll start printing stuff up... I'm not quite prepared to start a 7 hr print ;b
+
+I'm not going to update the repo cad models quite yet, in case I have to make more adjustments later.
+
+2.5 hrs
