@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 69.5 hrs
+## total time: 79.5 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -359,3 +359,9 @@ today I worked more on the CAD after getting a better idea of what screws I have
 I'm not going to update the repo cad models quite yet, in case I have to make more adjustments later.
 
 2.5 hrs
+
+### days thirty four thru forty - august 1st thru 7th
+
+by now all the parts have arrived, but I'm still trying to get parts printed. My 3d printer is having a lot of issues, and it's been a struggle trying to crank out this petg-cf. As of the time of writing I have the main drone body going (for the 219734890182nd time) and it seems to be working! I've been doing a bunch of work on the controller models, trying to get them to be easier to assemble. Not a whole lot of progress as a whole but progress nonetheless.
+
+10 hrs
