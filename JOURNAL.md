@@ -5,7 +5,7 @@ description: "My custom FPV drone and controllers!"
 created_at: "2025-05-27"
 ---
 
-## total time: 79.5 hrs
+## total time: 84.5 hrs
 
 # firstly
 i want to thank everybody at hack club who's making this possible. if you don't know, hack club is a 100% 501(c)(3) nonprofit run by zach latta + friends made for coders and electronics peoples 18 and under. this project is made possible through their highway to undercity program, where teens are empowered to build their dreams with up to $350 in funding!
@@ -365,3 +365,23 @@ I'm not going to update the repo cad models quite yet, in case I have to make mo
 by now all the parts have arrived, but I'm still trying to get parts printed. My 3d printer is having a lot of issues, and it's been a struggle trying to crank out this petg-cf. As of the time of writing I have the main drone body going (for the 219734890182nd time) and it seems to be working! I've been doing a bunch of work on the controller models, trying to get them to be easier to assemble. Not a whole lot of progress as a whole but progress nonetheless.
 
 10 hrs
+
+### day forty one - august 15
+
+after 3d printing more and more parts, today I did a build stream in hack club! i got the legs and motors attached, and added heat set inserts to stuff. It's looking quite cool. Installing the motors was surprisingly difficult due to the narrow wire routing tunnels, but I got it in the end.
+
+2.5 hrs
+
+### day forty two - august 16
+
+today i tried to start soldering the battery connector and capacitor to the ESC, but for some reason my soldering iron doesn't agree with that mission. stuff kept going wrong and I had no idea why. Ended today trying to use my solid rosin flux, and it looks like its working a little bit better. whyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
+
+2 hrs
+
+### day forty three - august 17
+
+YESSSS
+
+today i finally got the battery + capacitor connector attached!!!!!!!!!!!!! :sob: i plugged it in, it powered on, i calibrated accelerometer in betaflight app, took a little look around the gui, and yeah thats pretty much it (at least for now... the day aint over yet)
+
+2.5 hrs
