@@ -372,6 +372,9 @@ after 3d printing more and more parts, today I did a build stream in hack club! 
 
 2.5 hrs
 
+<img width="1691" height="807" alt="image" src="https://github.com/user-attachments/assets/1398a7bc-d606-4cf1-9051-b8d0c8d9a25f" />
+
+
 ### day forty two - august 16
 
 today i tried to start soldering the battery connector and capacitor to the ESC, but for some reason my soldering iron doesn't agree with that mission. stuff kept going wrong and I had no idea why. Ended today trying to use my solid rosin flux, and it looks like its working a little bit better. whyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
