@@ -388,3 +388,11 @@ YESSSS
 today i finally got the battery + capacitor connector attached!!!!!!!!!!!!! :sob: i plugged it in, it powered on, i calibrated accelerometer in betaflight app, took a little look around the gui, and yeah thats pretty much it (at least for now... the day aint over yet)
 
 2.5 hrs
+
+## pretty much big general update - sept 3
+
+what can i say? I've done so much. I stopped logging because it would've been incredibly tedious to recount all of the wires i soldered in a given day and every little thing i've done.
+
+so here's a big fat update. i've finished building the entire drone and controllers and programmed the controllers and drone receiver. the controller communication is working, but for some reason the button presses aren't registering and the fc isn't getting the sbus data. I'll do some more troubleshooting soon.
+
+by this point hours and days are completely out the window... i worked just about every night in the past month on random stuff for it, and there's 0 way to track my hours like that. idk.
