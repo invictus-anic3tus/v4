@@ -16,7 +16,7 @@
   <h1></h1>
 
   <p>
-    A powerful, budget, open source 5" FPV quadcopter--perfect for freestyling, casual flying, and even short races!
+    A powerful, budget, open source 5" FPV quadcopter frame--perfect for freestyling, casual flying, and even short races!
   </p>
 </div>
 
@@ -29,7 +29,6 @@
 - [About](#about)
 - [Features](#features)
 - [Specifications](#specifications)
-- [Controllers](#controllers)
 - [Setup](#setup)
   - [Assembly](#assembly)
   - [Firmware](#firmware)
@@ -55,14 +54,13 @@ When Highway came along. [Highway](https://highway.hackclub.com/) is a [Hack Clu
 - An analog video system, utilizing the Caddx Ratel Pro camera with the HGLRC Zeus Nano 350mW VTX
 - 110° rotating camera
 - 5-minute flight time per battery
-- An ESP32C3 XIAO receiver
-- ESP32C3 XIAO dual controllers
+- A Radiomaster RP1 ELRS receiver
 - A drone finder buzzer for crashes
 - A leading GPS module, the HGLRC M100-5883
 - The Speedybee F405 Mini FC-ESC stack
 - Powerful iFlight XING E-Pro 2207 2450kV motors
 - 5045 propellers
-- 3D-printed case for both drone and controllers
+- 3D-printed case
 - Only uses M3 screws
 
 ## Specifications
@@ -78,26 +76,6 @@ When Highway came along. [Highway](https://highway.hackclub.com/) is a [Hack Clu
 | Flight Range (Untested)          | 400m    |
 
 *When flying in normal weather at low to mid-range speeds
-
-# Controllers
-
-The v4 is designed to be controlled by an ESP-NOW-based controller. The drone has a slot for an ESP32C3 XIAO to fit, which can communicate to the ground controller which also has an ESP32. This ESP32 controller can be any shape and size you wish, but there are 3D-printable dual handheld controllers already made. You can see the code for the controllers and drone in the firmware folder above.
-
-1. Left joystick (left thumb):  
-    * Horiz: Yaw (spin in place)  
-    * Vert: Throttle  
-    * Button: arm/disarm  
-2. Right joystick (right thumb):  
-    * Horiz: Roll (strafe left or right)  
-    * Vert: Pitch (forwards or backwards)  
-    * Button: land  
-3. Potentiometer (left thumb): camera angle  
-4. Button 1 (left index): programmable  
-5. Button 2 (right index): emergency poweroff  
-6. Button 3 (left middle): beep buzzer  
-7. Button 4 (right middle): programmable
-
-Note that all of the buttons, both standalone and on the joysticks, can be programmed to do whatever you'd like through Betaflight. These are simply the controls that I thing are the most sensible.
 
 # Setup
 
@@ -139,16 +117,6 @@ Now add heatset inserts to the top piece. It needs four to secure the FC-ESC sta
 
 All done!
 
-### Controller Assembly
-
-![Joysticks](images/Both_Joysticks.png)
-
-Instructions coming soon, for now see the CAD design
-
-Wiring diagram: (For left controller; the right one simply omits the standalone potentiometer)
-
-![Controller Wiring](<images/Controller Wiring.jpg>)
-
 ## Firmware
 
 See the [Speedybee F405 Mini manual](https://store-fhxxhuiq8q.mybigcommerce.com/product_images/img_SpeedyBee_F405_Mini_BLS_35A/SpeedyBee-f405-mini-stack-Manual-en.pdf) for firmware and FC-ESC setup.
@@ -161,7 +129,6 @@ In Betaflight (or on the SpeedyBee app) make sure that you set the servo limits 
 |--------------------------|--------|----------|-----------|----------------------------------------------------------------------------------------|----------------------------------------------------|-------------------------------------|----------------------------------------------------------------------------------------|-------------------|---------------------------------------------|---------------------------------------------------------------------------------------------------------|----------------------------------------------------------|
 |analog camera             |1       |$31.23    |$31.23     |https://www.amazon.com/Caddx-Ratel-Micro-Camera-Switchable/dp/B0DDBW1D5F/               |https://www.aliexpress.us/item/3256807158842523.html|https://www.ebay.com/itm/157155289889|https://caddxfpv.com/products/ratel-2-1-1-8inch-starlight-sensor-freestyle-fpv-camera   |5                  |                                             |                                                                                                         |amazon, but aliexpress is just a bit more for more reviews|
 |FC-ESC Stack              |1       |$75.15    |$75.15     |F405 Mini Stack                                                                         |https://www.aliexpress.us/item/3256806779866237.html|https://www.ebay.com/itm/145520506360|https://www.speedybee.com/speedybee-f405-mini-bls-35a-20x20-stack/                      |13.5               |                                             |speedybee f405 mini stack                                                                                |aliexpress                                                |
-|ESP32C3 XIAOs (3 pack)    |1       |$19.99    |$0.00      |https://www.amazon.com/Seeed-Studio-XIAO-ESP32C3-Microcontroller/dp/B0DGX3LSC7          |https://www.aliexpress.us/item/3256805195972424.html|https://www.ebay.com/itm/256334636719|https://www.seeedstudio.com/Seeed-Studio-XIAO-ESP32C3-3PCS-p-5920.html                  |4                  |                                             |One for drone-side receiver, two for controllers                                                         |amazon (or manufacturer depending on shipping cost)       |
 |Headset                   |1       |$54.19    |$54.19     |(none found)                                                                            |(none found)                                        |(any pre-owned set you can find)     |https://emax-usa.com                                                                    |                   |                                             |I used the Emax Transporter, feel free to use whatever analog goggles you'd like                         |manufacturer                                              |
 |Buzzer                    |1       |$2.12     |$2.12      |https://www.amazon.com/Cylewet-Electronic-Magnetic-Continuous-Arduino/dp/B01N7NHSY6/    |https://www.aliexpress.us/item/2255800643239740.html|https://www.ebay.com/itm/324358979243|(none)                                                                                  |2                  |                                             |get the 12x9.5 5V kind                                                                                   |aliexpress                                                |
 |VTX                       |1       |$24.99    |$24.99     |https://www.amazon.com/HGLRC-Microphone-Switchable-Transmitter-Betaflight/dp/B08MQ4ZDVF/|Likely not a good seller                            |https://www.ebay.com/itm/236115710085|https://www.hglrc.com/products/hglrc-zeus-nano-vtx-350mw-for-fpv-racing-drone           |2.4                |rush tank ultimate plus - $40                |                                                                                                         |amazon                                                    |
@@ -170,11 +137,6 @@ In Betaflight (or on the SpeedyBee app) make sure that you set the servo limits 
 |18mm M3 standoffs         |2       |$2.30     |$4.60      |(none found)                                                                            |https://www.aliexpress.us/item/3256808051105851.html|https://www.ebay.com/itm/394867520163|(none)                                                                                  |9                  |                                             |M3x18+6, make sure they're threaded, need 6 total                                                        |aliexpress                                                |
 |Body (filament)           |1       |$19.99    |$19.99     |                                                                                        |                                                    |                                     |                                                                                        |250                |                                             |any reliable PETG-CF brand is good: Atomic Filament's is the best, but really expensive                  |amazon (most likely)                                      |
 |gps                       |1       |$18.99    |$18.99     |https://www.amazon.com/HGLRC-M100-5883-GPS-Generation-Compatible/dp/B0CB5N8RQ8          |Very sketchy seller                                 |https://www.ebay.com/itm/365491316265|https://www.hglrc.com/collections/gps-module/products/m100-5883-gps                     |7.8                |                                             |                                                                                                         |aliexpress, but amazon is $0.4 more for better seller     |
-|diodes                    |1       |$0.98     |$0.98      |https://www.amazon.com/BOJACK-Rectifier-IN4007-Electronic-Silicon/dp/B07Q6J9TNW/        |https://www.aliexpress.us/item/3256801365779334.html|https://www.ebay.com/itm/233978474455|(none)                                                                                  |                   |                                             |for the controller battery charging                                                                      |aliexpress                                                |
-|joysticks                 |1       |$1.81     |$1.81      |https://www.amazon.com/Teyleten-Robot-Dual-axis-Controller-Raspberry/dp/B0CPFDKWZF/     |https://www.aliexpress.us/item/3256806299955871.html|https://www.ebay.com/itm/116398486698|(none)                                                                                  |                   |                                             |haz buttons!!!!                                                                                          |aliexpress                                                |
-|buttons                   |1       |$1.82     |$1.82      |https://www.amazon.com/QTEATAK-Momentary-Tactile-Button-Switch/dp/B07VSNN9S2            |https://www.aliexpress.us/item/3256802301084670.html|https://www.ebay.com/itm/115663380319|(none)                                                                                  |                   |                                             |6mm tactile switch, height ≤5mm                                                                          |aliexpress                                                |
-|small lipo batteries      |2       |$6.74     |$13.48     |https://www.amazon.com/EEMB-Battery-Rechargeable-Connector-Certified/dp/B095VN3JHW/     |(none found)                                        |https://www.ebay.com/itm/357122701041|(none)                                                                                  |                   |                                             |for powering the controllers - get any size smaller than in the CAD design                               |amazon (I wouldn't trust aliexpress with batteries)       |
-|controller on/off switches|1       |$3.20     |$3.20      |https://www.amazon.com/Tnuocke-Vertical-Position-Latching-SS12F44-G5/dp/B099MN9JFP      |https://www.aliexpress.us/item/3256803752541650.html|https://www.ebay.com/itm/296516034736|(none)                                                                                  |                   |                                             |get the ss12f44 model                                                                                    |aliexpress                                                |
 |Drone battery charger     |1       |$24.99    |$24.99     |https://www.amazon.com/SKYRC-B6Neo-Balance-Battery-Discharger/dp/B0CCT2WGNS/            |https://www.aliexpress.us/item/3256805953719537.html|https://www.ebay.com/itm/286231446903|https://www.skyrc.com/b6neo+                                                            |                   |https://www.amazon.com/gp/product/B0CYBXM3JV/|the skyrc b6 neo is great, but the alt linked amazon one seems good too                                  |amazon                                                    |
 |Motors                    |1       |$63.00    |$63.00     |https://www.amazon.com/SPARKHOBBY-Brushless-5-6inch-Propeller-Freestyle/dp/B0D791QQ64/  |https://www.aliexpress.us/item/3256807565015473.html|https://www.ebay.com/itm/364104658026|https://shop.iflight.com/xing-e-pro-2207-2-6s-fpv-nextgen-motor-pro874                  |136                |                                             |these are the ones I got, but please please please research your own 2207 models (16x16 mounting pattern)|amazon                                                    |
 |Props                     |2       |$2.24     |$4.48      |https://www.amazon.com/PHJKCRWXUL-6x4-5-3-Blade-Propeller-Quadcopter/dp/B0FB7VC2BD      |https://www.aliexpress.us/item/3256804148539664.html|https://www.ebay.com/itm/285665860636|(none)                                                                                  |20                 |                                             |please research these yourself (but get 5045 size)                                                       |aliexpress                                                |
