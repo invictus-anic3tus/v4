@@ -1,7 +1,7 @@
 ---
 title: "v4"
 author: "Anicetus"
-description: "My custom FPV drone and controllers!"
+description: "My custom FPV drone!"
 created_at: "2025-05-27"
 ---
 
@@ -21,29 +21,6 @@ if you're reading this on hack club, you may very well already know me. but if y
 5. and a custom 3d printer  
 
 so yeah i've got a bit to put on my resume! but anyways let's get down to business.
-
-
-# what the project currently looks like
-
-Right now I'm looking at an FPV drone using a standard FC-ESC stack and analog video system. It transmits to Emax Transporter goggles that display it in real-time to my eyeballs! The controller is fully DIY, and instead of being a single controller you hold with both hands, it's sort of like Nintendo joy-cons, with a joystick and two tactile switches on each one:
-
-1. Left joystick (left thumb):  
-    * Horiz: Yaw (spin in place)  
-    * Vert: Up/down  
-    * Button: arm/disarm  
-2. Right joystick (right thumb):  
-    * Horiz: Roll (strafe left or right)  
-    * Vert: Pitch (forwards or backwards)  
-    * Button: mode switch (manual, auto, idk)  
-3. Potentiometer (left thumb): camera angle  
-4. Button 1 (left index): land  
-5. Button 2 (right index): emergency poweroff  
-6. Button 3 (left middle): beep buzzer  
-7. Button 4 (right middle): programmable macro
-
-I may also add holding functions for the rest of the buttons, where holding a button makes it do something different than normal. Each controller has an ESP32C3 XIAO and a 1800mAh lipo battery in it. The left controller acts as the master in the ESP-Now communication, getting data from the right controller. It then sends its data as well as the right controller's data to the drone's ESP32, also an ESP32C3 XIAO. I'm using XIAOs because they have external antenna ports, which provide better signals than the onboard antennas of other boards. Additionally, I may use a stronger antenna on the left controller and the drone than what comes with the XIAOs.
-## bom
-[here](https://docs.google.com/spreadsheets/d/e/2PACX-1vSraEE6H8Cx8CHQLCQyQCyDCrQoR9ur6-9fPs5dZ3vY1AYaFjepRuHVCa8LgQ7bhq75_Z4WIajNvxX1/pubhtml)
 
 # captain's log
 yes i stinking know high seas ended in january shut up
@@ -396,3 +373,21 @@ what can i say? I've done so much. I stopped logging because it would've been in
 so here's a big fat update. i've finished building the entire drone and controllers and programmed the controllers and drone receiver. the controller communication is working, but for some reason the button presses aren't registering and the fc isn't getting the sbus data. I'll do some more troubleshooting soon.
 
 by this point hours and days are completely out the window... i worked just about every night in the past month on random stuff for it, and there's 0 way to track my hours like that. idk.
+
+## im sorry
+
+its been a long time. like, a really really long time... it's january 15th, 2026, and this drone isn't finished.
+
+the controllers never worked
+
+believe me, i put in a lot of effort into them, but while esp-now worked fine, the receiver never could get sbus to the fc correctly. idk what happened, but i've reached out and have zero clue as to what the issue could be
+
+so i gave up on the controllers
+
+this may be for the better i guess? if i'd followed through with them, i very likely wouldn't have gotten to fly very well. instead, i've spent $80 and got a real controller and a real receiver
+
+sorry again for abandoning the controllers... i've just removed them from the repo.
+
+maybe an update soon when i get the receiver working and the drone in the air, finally.
+
+im so sorry
